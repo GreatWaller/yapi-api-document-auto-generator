@@ -1,0 +1,1864 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "智慧通行",
+    "version": "last"
+  },
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "自助录入-P1",
+      "description": null
+    },
+    {
+      "name": "测试接口",
+      "description": null
+    },
+    {
+      "name": "字段配置-p1",
+      "description": null
+    },
+    {
+      "name": "系统管理-p1",
+      "description": null
+    },
+    {
+      "name": "屏保方案-p1",
+      "description": null
+    },
+    {
+      "name": "方案设置-p1",
+      "description": null
+    },
+    {
+      "name": "考勤-p1",
+      "description": null
+    },
+    {
+      "name": "公共分类",
+      "description": "公共分类"
+    },
+    {
+      "name": "体温监控",
+      "description": null
+    },
+    {
+      "name": "通行记录",
+      "description": null
+    },
+    {
+      "name": "演示平台",
+      "description": null
+    },
+    {
+      "name": "首页统计",
+      "description": null
+    },
+    {
+      "name": "告警中心",
+      "description": null
+    },
+    {
+      "name": "部门",
+      "description": null
+    },
+    {
+      "name": "人员管理-员工",
+      "description": null
+    },
+    {
+      "name": "人员管理-访客",
+      "description": null
+    },
+    {
+      "name": "人员管理-黑名单",
+      "description": ""
+    },
+    {
+      "name": "注册审核(P1重新开发)",
+      "description": null
+    },
+    {
+      "name": "策略",
+      "description": null
+    },
+    {
+      "name": "时刻表",
+      "description": null
+    },
+    {
+      "name": "设备组",
+      "description": null
+    },
+    {
+      "name": "策略管理-员工组",
+      "description": ""
+    },
+    {
+      "name": "策略管理-访客组",
+      "description": ""
+    },
+    {
+      "name": "策略管理-黑名单组",
+      "description": ""
+    },
+    {
+      "name": "设备",
+      "description": null
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/tenant/selfHelp/export": {
+      "get": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-导出",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">{</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"msg\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"success\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"code\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">0</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"data\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"name\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"9a15ff9a-5d7e-4d66-adb9-cec87826a83e.xlsx\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"id\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"9a15ff9a-5d7e-4d66-adb9-cec87826a83e\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"url\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"/tenant/common/retrieveFile/1/9a15ff9a-5d7e-4d66-adb9-cec87826a83e\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"suffix\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\".xlsx\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"pathName\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"D:\\export\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"msg\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">null</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"count\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">2</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"percentage\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">-1.0</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">}</span>",
+        "parameters": [
+          {
+            "name": "personType",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "key",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "deptId",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "reviewStatus",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "needReviewing",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "startDate",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "姓名"
+                    },
+                    "id": {
+                      "type": "string",
+                      "description": "ID"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "suffix": {
+                      "type": "string"
+                    },
+                    "pathName": {
+                      "type": "string"
+                    },
+                    "msg": {
+                      "type": "null"
+                    },
+                    "count": {
+                      "type": "number"
+                    },
+                    "percentage": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/selfUpdate": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "H5修改个人信息",
+        "description": "<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">{</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"msg\": \"success\",</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"code\": 0,</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"data\": \"\"</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "employeeId": {
+                  "type": "string"
+                },
+                "feature": {
+                  "type": "string"
+                },
+                "idNumber": {
+                  "type": "string"
+                },
+                "imageNode": {
+                  "type": "string"
+                },
+                "originalEmail": {
+                  "type": "string"
+                },
+                "originalIdNumber": {
+                  "type": "string"
+                },
+                "originalImageNode": {
+                  "type": "string"
+                },
+                "originalPhoto": {
+                  "type": "string"
+                },
+                "photo": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email",
+                "employeeId",
+                "idNumber",
+                "imageNode",
+                "photo",
+                "originalEmail",
+                "originalIdNumber",
+                "originalImageNode",
+                "originalPhoto"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/isAuthorized/{phone}": {
+      "get": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "H5登录鉴权",
+        "description": "{\n    \"msg\": \"success\",\n    \"code\": 0,\n    \"data\": \"\",\n    \"employeeId\": \"7924561386652280975\"\n}",
+        "parameters": [
+          {
+            "name": "phone",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                },
+                "employeeId": {
+                  "type": "string",
+                  "description": "员工ID"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/selfInfo/{id}": {
+      "get": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "H5获取待修改个人信息",
+        "description": "{\n    \"msg\": \"success\",\n    \"code\": 0,\n    \"data\": {\n        \"name\": \"X1\",\n        \"jobNo\": \"2020072201\",\n        \"depts\": [\n            {\n                \"id\": \"543523523525235\",\n                \"pid\": \"0\",\n                \"pidName\": null,\n                \"areaCodeIds\": null,\n                \"areaCodes\": \"\",\n                \"name\": \"测试测试\",\n                \"alias\": \"\",\n                \"sort\": 0,\n                \"remark\": \"\",\n                \"tenantId\": \"192\",\n                \"createBy\": \"0\",\n                \"createTime\": \"2020-05-21 11:08:05\",\n                \"updateBy\": \"0\",\n                \"updateTime\": \"2020-05-21 11:08:05\",\n                \"isDel\": 0,\n                \"childList\": null\n            }\n        ],\n        \"dutyName\": \"\",\n        \"employeeId\": \"3034973652678015280\",\n        \"imageNode\": \"202007034ngs3rty\",\n        \"photo\": \"0cd796bf9fa94b028b04693a3a5d53d7\",\n        \"feature\": null,\n        \"email\": \"[email@gmail.com](mailto:email@gmail.com)\",\n        \"idNumber\": \"stringid12345678\",\n        \"photoUrl\": \"/tenant/common/retrieveImage/202007034ngs3rty/0cd796bf9fa94b028b04693a3a5d53d7\"\n    }\n}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "employeeId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "jobNo": {
+                      "type": "string"
+                    },
+                    "depts": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "pid": {
+                            "type": "string"
+                          },
+                          "pidName": {
+                            "type": "null"
+                          },
+                          "areaCodeIds": {
+                            "type": "null"
+                          },
+                          "areaCodes": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alias": {
+                            "type": "string"
+                          },
+                          "sort": {
+                            "type": "number"
+                          },
+                          "remark": {
+                            "type": "string"
+                          },
+                          "tenantId": {
+                            "type": "string"
+                          },
+                          "createBy": {
+                            "type": "string"
+                          },
+                          "createTime": {
+                            "type": "string"
+                          },
+                          "updateBy": {
+                            "type": "string"
+                          },
+                          "updateTime": {
+                            "type": "string"
+                          },
+                          "isDel": {
+                            "type": "number"
+                          },
+                          "childList": {
+                            "type": "null"
+                          }
+                        }
+                      }
+                    },
+                    "dutyName": {
+                      "type": "string"
+                    },
+                    "employeeId": {
+                      "type": "string"
+                    },
+                    "imageNode": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "type": "string"
+                    },
+                    "feature": {
+                      "type": "null"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "idNumber": {
+                      "type": "string"
+                    },
+                    "photoUrl": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/update": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-保存",
+        "description": "{\n    \"employeeId\": \"7924561386652280975\",\n    \"name\": \"X2\",\n    \"jobNo\": \"2020072202\",\n    \"imageNode\": \"202007034ngs3rty\",\n    \"photo\": \"0cd796bf9fa94b028b04693a3a5d53d7\",\n    \"deptName\": null,\n    \"groupName\": null,\n    \"depts\": [\n        \"543523523525235\",\n        \"7904582836868873745\"\n    ],\n    \"sex\": \"Female\",\n    \"email\": \"[email@gmail.com](mailto:email@gmail.com)\",\n    \"phone\": \"18260086002\",\n    \"cardIC\": null,\n    \"idNumber\": \"stringid1234567\",\n    \"dutyName\": \"\",\n    \"originalImageNode\": \"202007034ngs3rty\",\n    \"originalPhoto\": \"d02b45d4018a4022a3e72ae3e574c5a0\",\n    \"originalEmail\": \"string\",\n    \"originalIdNumber\": \"string\",\n    \"birthday\": \"2020-07-01\",\n    \"entryTime\": null,\n    \"startTime\": null,\n    \"endTime\": null,\n    \"prompt\": null,\n    \"remark\": null\n}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "birthday": {
+                  "type": "string"
+                },
+                "cardIC": {
+                  "type": "string"
+                },
+                "deptIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "dutyName": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "employeeId": {
+                  "type": "number"
+                },
+                "endTime": {
+                  "type": "string"
+                },
+                "entryTime": {
+                  "type": "string"
+                },
+                "groupIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "idNumber": {
+                  "type": "string"
+                },
+                "imageNode": {
+                  "type": "string"
+                },
+                "jobNo": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "originalEmail": {
+                  "type": "string"
+                },
+                "originalIdNumber": {
+                  "type": "string"
+                },
+                "originalImageNode": {
+                  "type": "string"
+                },
+                "originalPhoto": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "photo": {
+                  "type": "string"
+                },
+                "prompt": {
+                  "type": "string"
+                },
+                "remark": {
+                  "type": "string"
+                },
+                "sex": {
+                  "type": "string"
+                },
+                "startTime": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/saveAndPass": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-保存并通过",
+        "description": "{\n    \"employeeId\": \"7924561386652280975\",\n    \"name\": \"X2\",\n    \"jobNo\": \"2020072202\",\n    \"imageNode\": \"202007034ngs3rty\",\n    \"photo\": \"0cd796bf9fa94b028b04693a3a5d53d7\",\n    \"deptName\": null,\n    \"groupName\": null,\n    \"depts\": [\n        \"543523523525235\",\n        \"7904582836868873745\"\n    ],\n    \"sex\": \"Female\",\n    \"email\": \"[email@gmail.com](mailto:email@gmail.com)\",\n    \"phone\": \"18260086002\",\n    \"cardIC\": null,\n    \"idNumber\": \"stringid1234567\",\n    \"dutyName\": \"\",\n    \"originalImageNode\": \"202007034ngs3rty\",\n    \"originalPhoto\": \"d02b45d4018a4022a3e72ae3e574c5a0\",\n    \"originalEmail\": \"string\",\n    \"originalIdNumber\": \"string\",\n    \"birthday\": \"2020-07-01\",\n    \"entryTime\": null,\n    \"startTime\": null,\n    \"endTime\": null,\n    \"prompt\": null,\n    \"remark\": null\n}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "employeeId": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "jobNo": {
+                  "type": "string"
+                },
+                "imageNode": {
+                  "type": "string"
+                },
+                "photo": {
+                  "type": "string"
+                },
+                "deptName": {
+                  "type": "null"
+                },
+                "groupName": {
+                  "type": "null"
+                },
+                "depts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sex": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "cardIC": {
+                  "type": "null"
+                },
+                "idNumber": {
+                  "type": "string"
+                },
+                "dutyName": {
+                  "type": "string"
+                },
+                "originalImageNode": {
+                  "type": "string"
+                },
+                "originalPhoto": {
+                  "type": "string"
+                },
+                "originalEmail": {
+                  "type": "string"
+                },
+                "originalIdNumber": {
+                  "type": "string"
+                },
+                "birthday": {
+                  "type": "string"
+                },
+                "entryTime": {
+                  "type": "null"
+                },
+                "startTime": {
+                  "type": "null"
+                },
+                "endTime": {
+                  "type": "null"
+                },
+                "prompt": {
+                  "type": "null"
+                },
+                "remark": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/reject": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-审核拒绝",
+        "description": "<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">{</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"msg\": \"success\",</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"code\": 0,</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"data\": \"\"</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/pass": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-审核通过",
+        "description": "<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">{</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"msg\": \"success\",</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"code\": 0,</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"data\": \"\"</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/faceDection": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "H5图片检测及比对",
+        "description": "{\n    \"msg\": \"Please pass in image node and md5\",\n    \"code\": 500,\n    \"data\": \"\"\n}",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "imageNode": {
+                  "type": "string"
+                },
+                "photo": {
+                  "type": "string"
+                },
+                "originalImageNode": {
+                  "type": "string"
+                },
+                "originalPhoto": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "imageNode",
+                "photo"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/count": {
+      "get": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-按审核状态分类统计数量",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">{</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"msg\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"success\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"code\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(9, 134, 88)\">0</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"data\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: {</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"total\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"rejected\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"0\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"handling\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"2\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">        </span><span class=\"colour\" style=\"color:rgb(163, 21, 21)\">\"passed\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">: </span><span class=\"colour\" style=\"color:rgb(4, 81, 165)\">\"0\"</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">    }</span>\n<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">}</span>",
+        "parameters": [
+          {
+            "name": "needReviewing",
+            "in": "query",
+            "required": false,
+            "description": "是否需要审核",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "total": {
+                      "type": "string"
+                    },
+                    "rejected": {
+                      "type": "string"
+                    },
+                    "handling": {
+                      "type": "string"
+                    },
+                    "passed": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/page": {
+      "get": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-查询列表",
+        "description": "{\n    \"msg\": \"success\",\n    \"code\": 0,\n    \"data\": {\n        \"totalCount\": 2,\n        \"pageSize\": 10,\n        \"totalPage\": 1,\n        \"currPage\": 1,\n        \"list\": [\n            {\n                \"employeeId\": \"3034973652678015280\",\n                \"name\": \"X1\",\n                \"jobNo\": \"2020072201\",\n                \"imageNode\": \"202007034ngs3rty\",\n                \"photo\": \"0cd796bf9fa94b028b04693a3a5d53d7\",\n                \"deptName\": null,\n                \"groupName\": null,\n                \"depts\": [\n                    {\n                        \"id\": \"543523523525235\",\n                        \"pid\": \"0\",\n                        \"pidName\": null,\n                        \"areaCodeIds\": null,\n                        \"areaCodes\": \"\",\n                        \"name\": \"测试测试\",\n                        \"alias\": \"\",\n                        \"sort\": 0,\n                        \"remark\": \"\",\n                        \"tenantId\": \"192\",\n                        \"createBy\": \"0\",\n                        \"createTime\": \"2020-05-21 11:08:05\",\n                        \"updateBy\": \"0\",\n                        \"updateTime\": \"2020-05-21 11:08:05\",\n                        \"isDel\": 0,\n                        \"childList\": null\n                    }\n                ],\n                \"groups\": [\n                    {\n                        \"id\": \"12554126327\",\n                        \"type\": 1,\n                        \"name\": \"默认员工组\",\n                        \"isDefault\": 1,\n                        \"remark\": \"\",\n                        \"memberIds\": null,\n                        \"deptIds\": null,\n                        \"tenantId\": \"192\",\n                        \"createBy\": \"0\",\n                        \"createTime\": \"2020-04-30 00:23:12\",\n                        \"updateBy\": \"0\",\n                        \"updateTime\": \"2020-04-30 00:23:12\",\n                        \"isDel\": 0,\n                        \"switchValue\": false,\n                        \"deviceCount\": null\n                    }\n                ],\n                \"sex\": \"Female\",\n                \"email\": \"[email@gmail.com](mailto:email@gmail.com)\",\n                \"phone\": \"18260086001\",\n                \"cardIC\": null,\n                \"idNumber\": \"stringid12345678\",\n                \"dutyName\": \"\",\n                \"originalImageNode\": \"202007034ngs3rty\",\n                \"originalPhoto\": \"d02b45d4018a4022a3e72ae3e574c5a0\",\n                \"originalEmail\": \"string\",\n                \"originalIdNumber\": \"string\",\n                \"birthday\": null,\n                \"entryTime\": null,\n                \"startTime\": null,\n                \"endTime\": null,\n                \"prompt\": null,\n                \"remark\": null\n            },\n            {\n                \"employeeId\": \"7924561386652280975\",\n                \"name\": \"X2\",\n                \"jobNo\": \"2020072202\",\n                \"imageNode\": \"202007034ngs3rty\",\n                \"photo\": \"0cd796bf9fa94b028b04693a3a5d53d7\",\n                \"deptName\": null,\n                \"groupName\": null,\n                \"depts\": [\n                    {\n                        \"id\": \"543523523525235\",\n                        \"pid\": \"0\",\n                        \"pidName\": null,\n                        \"areaCodeIds\": null,\n                        \"areaCodes\": \"\",\n                        \"name\": \"测试测试\",\n                        \"alias\": \"\",\n                        \"sort\": 0,\n                        \"remark\": \"\",\n                        \"tenantId\": \"192\",\n                        \"createBy\": \"0\",\n                        \"createTime\": \"2020-05-21 11:08:05\",\n                        \"updateBy\": \"0\",\n                        \"updateTime\": \"2020-05-21 11:08:05\",\n                        \"isDel\": 0,\n                        \"childList\": null\n                    },\n                    {\n                        \"id\": \"7904582836868873745\",\n                        \"pid\": \"543523523525235\",\n                        \"pidName\": null,\n                        \"areaCodeIds\": null,\n                        \"areaCodes\": \"\",\n                        \"name\": \"abc\",\n                        \"alias\": \"\",\n                        \"sort\": 1,\n                        \"remark\": \"\",\n                        \"tenantId\": \"192\",\n                        \"createBy\": \"0\",\n                        \"createTime\": \"2020-05-21 11:08:48\",\n                        \"updateBy\": \"0\",\n                        \"updateTime\": \"2020-05-21 11:08:48\",\n                        \"isDel\": 0,\n                        \"childList\": null\n                    }\n                ],\n                \"groups\": [\n                    {\n                        \"id\": \"12554126327\",\n                        \"type\": 1,\n                        \"name\": \"默认员工组\",\n                        \"isDefault\": 1,\n                        \"remark\": \"\",\n                        \"memberIds\": null,\n                        \"deptIds\": null,\n                        \"tenantId\": \"192\",\n                        \"createBy\": \"0\",\n                        \"createTime\": \"2020-04-30 00:23:12\",\n                        \"updateBy\": \"0\",\n                        \"updateTime\": \"2020-04-30 00:23:12\",\n                        \"isDel\": 0,\n                        \"switchValue\": false,\n                        \"deviceCount\": null\n                    }\n                ],\n                \"sex\": \"Female\",\n                \"email\": \"[email@gmail.com](mailto:email@gmail.com)\",\n                \"phone\": \"18260086002\",\n                \"cardIC\": null,\n                \"idNumber\": \"stringid1234567\",\n                \"dutyName\": \"\",\n                \"originalImageNode\": \"202007034ngs3rty\",\n                \"originalPhoto\": \"d02b45d4018a4022a3e72ae3e574c5a0\",\n                \"originalEmail\": \"string\",\n                \"originalIdNumber\": \"string\",\n                \"birthday\": \"2020-07-01\",\n                \"entryTime\": null,\n                \"startTime\": null,\n                \"endTime\": null,\n                \"prompt\": null,\n                \"remark\": null\n            }\n        ]\n    }\n}",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "personType",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "key",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "deptId",
+            "in": "query",
+            "required": false,
+            "description": "",
+            "type": "string"
+          },
+          {
+            "name": "reviewStatus",
+            "in": "query",
+            "required": false,
+            "description": "审核状态（0：默认， 1:已录入, 2：通过，3：不通过）",
+            "type": "string"
+          },
+          {
+            "name": "needReviewing",
+            "in": "query",
+            "required": false,
+            "description": "是否需要管理员审核(0：不需要，1：需要)",
+            "type": "string"
+          },
+          {
+            "name": "startDate",
+            "in": "query",
+            "required": false,
+            "description": "录入时间-开始时间",
+            "type": "string"
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "required": false,
+            "description": "录入时间-结束时间",
+            "type": "string"
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "required": false,
+            "description": "录入方式",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "totalCount": {
+                      "type": "number"
+                    },
+                    "pageSize": {
+                      "type": "number"
+                    },
+                    "totalPage": {
+                      "type": "number"
+                    },
+                    "currPage": {
+                      "type": "number"
+                    },
+                    "list": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "employeeId": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "jobNo": {
+                            "type": "string"
+                          },
+                          "imageNode": {
+                            "type": "string"
+                          },
+                          "photo": {
+                            "type": "string"
+                          },
+                          "deptName": {
+                            "type": "null"
+                          },
+                          "groupName": {
+                            "type": "null"
+                          },
+                          "depts": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "pid": {
+                                  "type": "string"
+                                },
+                                "pidName": {
+                                  "type": "null"
+                                },
+                                "areaCodeIds": {
+                                  "type": "null"
+                                },
+                                "areaCodes": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "alias": {
+                                  "type": "string"
+                                },
+                                "sort": {
+                                  "type": "number"
+                                },
+                                "remark": {
+                                  "type": "string"
+                                },
+                                "tenantId": {
+                                  "type": "string"
+                                },
+                                "createBy": {
+                                  "type": "string"
+                                },
+                                "createTime": {
+                                  "type": "string"
+                                },
+                                "updateBy": {
+                                  "type": "string"
+                                },
+                                "updateTime": {
+                                  "type": "string"
+                                },
+                                "isDel": {
+                                  "type": "number"
+                                },
+                                "childList": {
+                                  "type": "null"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "pid",
+                                "pidName",
+                                "areaCodeIds",
+                                "areaCodes",
+                                "name",
+                                "alias",
+                                "sort",
+                                "remark",
+                                "tenantId",
+                                "createBy",
+                                "createTime",
+                                "updateBy",
+                                "updateTime",
+                                "isDel",
+                                "childList"
+                              ]
+                            }
+                          },
+                          "groups": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "type": {
+                                  "type": "number"
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "isDefault": {
+                                  "type": "number"
+                                },
+                                "remark": {
+                                  "type": "string"
+                                },
+                                "memberIds": {
+                                  "type": "null"
+                                },
+                                "deptIds": {
+                                  "type": "null"
+                                },
+                                "tenantId": {
+                                  "type": "string"
+                                },
+                                "createBy": {
+                                  "type": "string"
+                                },
+                                "createTime": {
+                                  "type": "string"
+                                },
+                                "updateBy": {
+                                  "type": "string"
+                                },
+                                "updateTime": {
+                                  "type": "string"
+                                },
+                                "isDel": {
+                                  "type": "number"
+                                },
+                                "switchValue": {
+                                  "type": "boolean"
+                                },
+                                "deviceCount": {
+                                  "type": "null"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "type",
+                                "name",
+                                "isDefault",
+                                "remark",
+                                "memberIds",
+                                "deptIds",
+                                "tenantId",
+                                "createBy",
+                                "createTime",
+                                "updateBy",
+                                "updateTime",
+                                "isDel",
+                                "switchValue",
+                                "deviceCount"
+                              ]
+                            }
+                          },
+                          "sex": {
+                            "type": "string"
+                          },
+                          "email": {
+                            "type": "string"
+                          },
+                          "phone": {
+                            "type": "string"
+                          },
+                          "cardIC": {
+                            "type": "null"
+                          },
+                          "idNumber": {
+                            "type": "string"
+                          },
+                          "dutyName": {
+                            "type": "string"
+                          },
+                          "originalImageNode": {
+                            "type": "string"
+                          },
+                          "originalPhoto": {
+                            "type": "string"
+                          },
+                          "originalEmail": {
+                            "type": "string"
+                          },
+                          "originalIdNumber": {
+                            "type": "string"
+                          },
+                          "birthday": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          },
+                          "entryTime": {
+                            "type": "null"
+                          },
+                          "startTime": {
+                            "type": "null"
+                          },
+                          "endTime": {
+                            "type": "null"
+                          },
+                          "prompt": {
+                            "type": "null"
+                          },
+                          "remark": {
+                            "type": "null"
+                          }
+                        },
+                        "required": [
+                          "employeeId",
+                          "name",
+                          "jobNo",
+                          "imageNode",
+                          "photo",
+                          "deptName",
+                          "groupName",
+                          "depts",
+                          "groups",
+                          "sex",
+                          "email",
+                          "phone",
+                          "cardIC",
+                          "idNumber",
+                          "dutyName",
+                          "originalImageNode",
+                          "originalPhoto",
+                          "originalEmail",
+                          "originalIdNumber",
+                          "birthday",
+                          "entryTime",
+                          "startTime",
+                          "endTime",
+                          "prompt",
+                          "remark"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/isFoundSelfLogNotHandled": {
+      "get": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-配置-提示尚未处理的自助录入",
+        "description": "{\n    \"msg\": \"success\",\n    \"code\": 0,\n    \"data\": {\n        \"isFoundNotHandled\": true\n    }\n}",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "isFoundNotHandled": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/passAllNotHandled": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-配置-提示未处理选择自动通过",
+        "description": "<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">{</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"msg\": \"success\",</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"code\": 0,</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"data\": \"\"</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">}</span>",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/updateConfiguration": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-配置-更改配置",
+        "description": "<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">{</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"msg\": \"success\",</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"code\": 0,</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">  \"data\": \"\"</span>\n<span class=\"colour\" style=\"color: rgb(51, 51, 51);\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "endDate": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "number"
+                },
+                "needReviewing": {
+                  "type": "boolean"
+                },
+                "photoThreshold": {
+                  "type": "number"
+                },
+                "startDate": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/configurationInfo": {
+      "get": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-配置-获取该租户配置信息",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">{</span>\n\"msg\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">\"success\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"code\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">0</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"data\": {\n\"id\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">\"1285778135581827074\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"tenantId\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">\"11\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"startDate\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">\"2020-05-21 11:08:48\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"endDate\": <span class=\"colour\" style=\"color:rgb(31, 129, 31)\">null</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"needReviewing\": <span class=\"colour\" style=\"color:rgb(31, 129, 31)\">false</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"photoThreshold\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">0.65</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"createTime\": <span class=\"colour\" style=\"color:rgb(31, 129, 31)\">null</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"updateTime\": <span class=\"colour\" style=\"color:rgb(31, 129, 31)\">null</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"isDeleted\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">0</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">}</span>\n}",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "tenantId": {
+                      "type": "string"
+                    },
+                    "startDate": {
+                      "type": "string"
+                    },
+                    "endDate": {
+                      "type": "null"
+                    },
+                    "needReviewing": {
+                      "type": "boolean"
+                    },
+                    "photoThreshold": {
+                      "type": "number"
+                    },
+                    "createTime": {
+                      "type": "null"
+                    },
+                    "updateTime": {
+                      "type": "null"
+                    },
+                    "isDeleted": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/tenant/selfHelp/notify": {
+      "post": {
+        "tags": [
+          "自助录入-P1"
+        ],
+        "summary": "管理员端-配置-邀请自助录入",
+        "description": "<span class=\"colour\" style=\"color:rgb(0, 0, 0)\">{</span>\n\"msg\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">\"success\"</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"result\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">2</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"code\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">0</span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">,</span>\n\"data\": <span class=\"colour\" style=\"color:rgb(136, 0, 0)\">\"\"</span>\n<span class=\"colour\" style=\"color:rgb(136, 0, 0)\"></span><span class=\"colour\" style=\"color:rgb(0, 0, 0)\">}</span>",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "all": {
+                  "type": "boolean",
+                  "description": "邀请时若选择**全部员工**，则为true"
+                },
+                "employeeIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "description": "Long"
+                  }
+                },
+                "endDate": {
+                  "type": "string"
+                },
+                "needReviewing": {
+                  "type": "boolean"
+                },
+                "photoThreshold": {
+                  "type": "number"
+                },
+                "startDate": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "result": {
+                  "type": "number",
+                  "description": "授权人数"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/terminal-rest-dev/api/alarm/record": {
+      "post": {
+        "tags": [
+          "测试接口"
+        ],
+        "summary": "生成告警测试数据",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "alarmInfos": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "alarmId": {
+                        "type": "string",
+                        "description": "告警id"
+                      },
+                      "occurPhoto": {
+                        "type": "string",
+                        "description": "告警时抓拍照片"
+                      },
+                      "relieveStatus": {
+                        "type": "number",
+                        "description": "传 0"
+                      },
+                      "occurTime": {
+                        "type": "string",
+                        "description": "发生告警时间"
+                      },
+                      "alarmType": {
+                        "type": "number",
+                        "description": "告警类型 3：密码破解异常数 4：消防报警异常数 5：非活体攻击异常数 6：门磁超时异常数 7：设备拆除异常数"
+                      },
+                      "sn": {
+                        "type": "string",
+                        "description": "sn"
+                      }
+                    },
+                    "required": [
+                      "alarmId",
+                      "occurPhoto",
+                      "relieveStatus",
+                      "occurTime",
+                      "alarmType",
+                      "sn"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "title": "empty object",
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/terminal-tenant/tenant/dict/update": {
+      "post": {
+        "tags": [
+          "字段配置-p1"
+        ],
+        "summary": "修改字段",
+        "description": "[\n    {\n      \"id\": \"1277520494273163265\",\n      \"name\": \"测试1\",\n      \"value\": 0，\n\"isReset\": 0，\n\"type\": 0\n    }\n  ]",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "root",
+            "in": "body",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "number",
+                    "description": "1 选中 0未选中"
+                  },
+                  "isReset": {
+                    "type": "number",
+                    "description": "是否重置1 重置 0否"
+                  },
+                  "type": {
+                    "type": "number",
+                    "description": "1 员工  2 访客  3黑名单"
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "value",
+                  "isReset",
+                  "type"
+                ]
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {}
+            }
+          }
+        }
+      }
+    },
+    "/terminal-tenant/tenant/dict/list/{type}": {
+      "get": {
+        "tags": [
+          "字段配置-p1"
+        ],
+        "summary": "查询字段列表",
+        "description": "{\n  \"msg\": \"success\",\n  \"code\": 0,\n  \"data\": [\n    {\n      \"id\": \"8022166185277750960\",\n      \"name\": \"基础信息\",\n      \"code\": \"base_info\",\n      \"value\": null,\n      \"isChange\": 0,\n      \"childList\": [\n        {\n          \"id\": \"1278134377180790786\",\n          \"name\": \"照片\",\n          \"code\": \"photo\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377214345217\",\n          \"name\": \"姓名\",\n          \"code\": \"name\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377260482562\",\n          \"name\": \"手机号码\",\n          \"code\": \"phone\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377302425601\",\n          \"name\": \"邮箱地址\",\n          \"code\": \"email\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377340174338\",\n          \"name\": \"证件号码\",\n          \"code\": \"id_number\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377138847745\",\n          \"name\": \"性别\",\n          \"code\": \"sex\",\n          \"value\": 1,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377096904705\",\n          \"name\": \"生日\",\n          \"code\": \"birthday\",\n          \"value\": 1,\n          \"isChange\": 1,\n          \"childList\": null\n        }\n      ]\n    },\n    {\n      \"id\": \"1768834137035420367\",\n      \"name\": \"工作信息\",\n      \"code\": \"job_info\",\n      \"value\": null,\n      \"isChange\": 0,\n      \"childList\": [\n        {\n          \"id\": \"1278134377499557890\",\n          \"name\": \"工号\",\n          \"code\": \"job_no\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377541500929\",\n          \"name\": \"部门\",\n          \"code\": \"dept\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377583443969\",\n          \"name\": \"职务\",\n          \"code\": \"duty_name\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377466003458\",\n          \"name\": \"入职日期\",\n          \"code\": \"entry_time\",\n          \"value\": 1,\n          \"isChange\": 1,\n          \"childList\": null\n        }\n      ]\n    },\n    {\n      \"id\": \"1297089667200974956\",\n      \"name\": \"通行信息\",\n      \"code\": \"pass_info\",\n      \"value\": null,\n      \"isChange\": 0,\n      \"childList\": [\n        {\n          \"id\": \"1278134377721856002\",\n          \"name\": \"员工组\",\n          \"code\": \"group\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377763799042\",\n          \"name\": \"授权期限\",\n          \"code\": \"valid_time\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377801547778\",\n          \"name\": \"授权状态\",\n          \"code\": \"valid_status\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377856073729\",\n          \"name\": \"IC卡号\",\n          \"code\": \"ic_card\",\n          \"value\": 1,\n          \"isChange\": 0,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134377679912961\",\n          \"name\": \"提示语\",\n          \"code\": \"prompt\",\n          \"value\": 1,\n          \"isChange\": 1,\n          \"childList\": null\n        }\n      ]\n    },\n    {\n      \"id\": \"9171989694770003314\",\n      \"name\": \"自定义信息\",\n      \"code\": \"custom_info\",\n      \"value\": null,\n      \"isChange\": 0,\n      \"childList\": [\n        {\n          \"id\": \"1278134377981902850\",\n          \"name\": \"\",\n          \"code\": \"custom1\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378015457281\",\n          \"name\": \"\",\n          \"code\": \"custom2\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378049011714\",\n          \"name\": \"\",\n          \"code\": \"custom3\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378086760450\",\n          \"name\": \"\",\n          \"code\": \"custom4\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378120314881\",\n          \"name\": \"\",\n          \"code\": \"custom5\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378158063618\",\n          \"name\": \"\",\n          \"code\": \"custom6\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378195812353\",\n          \"name\": \"\",\n          \"code\": \"custom7\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378233561089\",\n          \"name\": \"\",\n          \"code\": \"custom8\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378279698433\",\n          \"name\": \"\",\n          \"code\": \"custom9\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        },\n        {\n          \"id\": \"1278134378325835778\",\n          \"name\": \"\",\n          \"code\": \"custom10\",\n          \"value\": 0,\n          \"isChange\": 1,\n          \"childList\": null\n        }\n      ]\n    },\n    {\n      \"id\": \"3879053091391148282\",\n      \"name\": \"其他信息\",\n      \"code\": \"other_info\",\n      \"value\": null,\n      \"isChange\": 0,\n      \"childList\": [\n        {\n          \"id\": \"1278134378418110466\",\n          \"name\": \"备注\",\n          \"code\": \"remark\",\n          \"value\": 1,\n          \"isChange\": 1,\n          \"childList\": null\n        }\n      ]\n    }\n  ]\n}",
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "description": "1 员工  2访客 3黑名单",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "code": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "null"
+                      },
+                      "isChange": {
+                        "type": "number"
+                      },
+                      "childList": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "code": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            },
+                            "isChange": {
+                              "type": "number"
+                            },
+                            "childList": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "code",
+                            "value",
+                            "isChange",
+                            "childList"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "name",
+                      "code",
+                      "value",
+                      "isChange",
+                      "childList"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/terminal-tenant/tenant/dict/custom/list/:type": {
+      "get": {
+        "tags": [
+          "字段配置-p1"
+        ],
+        "summary": "查询自定义字段列表",
+        "description": "{\n  \"msg\": \"success\",\n  \"code\": 0,\n  \"data\": [\n    {\n      \"id\": \"1278134377981902850\",\n      \"name\": \"\",\n      \"code\": \"custom1\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378015457281\",\n      \"name\": \"\",\n      \"code\": \"custom2\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378049011714\",\n      \"name\": \"\",\n      \"code\": \"custom3\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378086760450\",\n      \"name\": \"\",\n      \"code\": \"custom4\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378120314881\",\n      \"name\": \"\",\n      \"code\": \"custom5\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378158063618\",\n      \"name\": \"\",\n      \"code\": \"custom6\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378195812353\",\n      \"name\": \"\",\n      \"code\": \"custom7\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378233561089\",\n      \"name\": \"\",\n      \"code\": \"custom8\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378279698433\",\n      \"name\": \"\",\n      \"code\": \"custom9\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    },\n    {\n      \"id\": \"1278134378325835778\",\n      \"name\": \"\",\n      \"code\": \"custom10\",\n      \"value\": 0,\n      \"isChange\": 1,\n      \"childList\": null\n    }\n  ]\n}",
+        "parameters": [
+          {
+            "name": "type",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$schema": "http://json-schema.org/draft-04/schema#",
+              "type": "object",
+              "properties": {
+                "msg": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "number"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "code": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "number"
+                      },
+                      "isChange": {
+                        "type": "number"
+                      },
+                      "childList": {
+                        "type": "null"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "name",
+                      "code",
+                      "value",
+                      "isChange",
+                      "childList"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
